@@ -1,0 +1,146 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.btn-nueva-cartilla {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    margin: 10px auto 0; 
+    display: block;
+    transition: background-color 0.3s ease;
+    position: relative; 
+    left: -25%; 
+}
+
+.btn-nueva-cartilla:hover {
+    background-color: #218838;
+}
+
+.main-content {
+    display: flex;
+    height: calc(100vh - 150px); /* Ajusta según el tamaño del cuerpo */
+    margin-top: 0;
+}
+
+.container {
+    display: flex;
+    flex: 1; /* Ocupa el espacio restante */
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* Cuadrícula 4x4 */
+    gap: 5px; /* Espacio entre cartas */
+    height: auto; /* Ajusta la altura automáticamente */
+    width: 320px; /* Ancho exacto de la cuadrícula para las cartas */
+    margin-left: 200px; /* Ajusta este valor para mover más a la derecha */
+}
+
+.card {
+    
+    border-radius: 10px;
+    padding: 3px; /* Reduce el padding */
+    background-color: #fff;
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+    width: 76px; /* Tamaño de las cartas más pequeño */
+    height: 100px; /* Tamaño de las cartas más pequeño */
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    max-height: 150px; /* Tamaño reducido de la imagen */
+    border-radius: 8px;
+}
+
+.card p {
+    margin-top: 2px; /* Espacio reducido */
+    font-size: 12px; /* Texto más pequeño */
+    color: #333;
+}
+
+.selected-card {
+    flex: 1; /* Ocupa el resto del contenedor a la derecha */
+    margin-left: 10px; /* Espacio entre la cuadrícula de cartas y la tarjeta seleccionada */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.selected-card img {
+    width: 120px; /* Ajuste del tamaño de la carta seleccionada */
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.selected-card-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f8f8f8;
+    padding: 5px;
+    border-radius: 8px;
+    width: 150px;
+}
+
+.selected-card p {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.audio-icon {
+    font-size: 25px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.consultar {
+    margin-top: 10px; /* Ajustado para que esté más cerca del contenido */
+    text-align: center;
+}
+
+.consultar button {
+    padding: 8px 16px;
+    font-size: 14px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consultar button:hover {
+    background-color: #0056b3;
+}
+
+.consultar input[type="number"] {
+    margin: 0 10px;
+    width: 50px; /* Ajusta el ancho según prefieras */
+    font-size: 16px; /* Ajusta el tamaño del texto si lo deseas */
+    text-align: center; /* Centra el número en el campo */
+    padding: 5px; /* Añade algo de espacio interior */
+}
